@@ -1,0 +1,14 @@
+spring:
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  h2:
+    console:
+      enabled: true #http://localhost:8080/h2-console
+  datasource:
+    url: jdbc:h2:mem:nisse
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
